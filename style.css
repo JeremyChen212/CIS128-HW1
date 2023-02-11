@@ -19,3 +19,9 @@ div.flex {
     text-align: center;
     margin: auto;
 }
+#topheader {
+    transition: color 0.5s ease-in;
+}
+.animate {
+    color: red;
+}

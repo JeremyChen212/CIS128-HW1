@@ -7,12 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeremy Chen - Homework1</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> 
+      setTimeout(
+        function() {
+          //do something special
+      }, 5000);
+      $(document).ready(function(){
+        $("button").click(function(){
+            $("#topheader").animate({
+              "font-size": '3em',
+              color: "#fff"
+            }),
+            $("#topheader").addClass("animate"),
+            $('#pfp').css({"border": "0px solid #f37736"}).animate({
+              'borderColor': "#f37736",
+              'borderWidth': '3px'
+            })
+
+            setTimeout(function() {
+              $("#topheader").animate({
+                "font-size": '2em'
+              }),
+              $("#topheader").removeClass("animate"),
+              $('#pfp').animate({
+                'borderWidth': '0px'
+              })       
+            },  1000)
+
+          })
+      });
+      </script> 
   </head>
   <body>
-    <h1 class="center" style="padding: 20px;">CIS 128 - Mobile Web App Development</h1>
-    <div class="flex center">
-      <img src="Headshot.PNG" alt="headshot">
-      <p f>
+    <h1 class="center" id="topheader"  style="padding: 20px;">CIS 128 - Mobile Web App Development</h1>
+    <button id="startAnimationBtn">Start Animation</button>
+    <div class="flex center main-div">
+      <img id="pfp" src="Headshot.PNG" alt="headshot">
+      <p >
         My name is Jeremy Chen and I am a junior at Design Tech High School. Some things I like to do in my free time are playing the guitar, making music on my laptop, and watching movies with my family. I also enjoy learning app development and new technologies or languages. A recent project I am working on with a friend is a todolist app made with svelte. I mainly work on frontend, which has led me to another passion of mine, design. I do both illustrations as well as both UI and UX design.
       </p>
     </div>
