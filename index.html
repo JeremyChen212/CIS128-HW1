@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website about myself, why I am taking this class, and some useful coding resources.">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jeremy Chen - Homework1</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <h1 class="center" style="padding: 20px;">CIS 128 - Mobile Web App Development</h1>
-    <div class="flex center">
-      <img src="Headshot.PNG" alt="headshot">
-      <p f>
-        My name is Jeremy Chen and I am a junior at Design Tech High School. Some things I like to do in my free time are playing the guitar, making music on my laptop, and watching movies with my family. I also enjoy learning app development and new technologies or languages. A recent project I am working on with a friend is a todolist app made with svelte. I mainly work on frontend, which has led me to another passion of mine, design. I do both illustrations as well as both UI and UX design.
-      </p>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Wild Life</title>
+</head>
+
+<body>
+    <div class="page">
+    <div id="header">
+        <div class="container">
+            <h1>Welcome to Wildlife for Life</h1>
+            <h2>We fight for life</h2>
+            
+            <ul class="navigation">
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="#" title="contact">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
     
-    <p >
-      I am attending this class to further expand my knowledge in developing mobile and web apps. I hope to be able to build up a portfolio as a front-end developer. 
-    </p>
-    <br><br>
-    <h3 class="center">Technologies for this class</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <h3 class="center">Resources</h3>
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/15050095/a-link-not-working-by-clicking-only-work-by-open-link-in-new-tab-command" target="_blank" rel="noopener noreferrer">Stackoverflow</a> - this website is great for finding solutions to any coding problems. Whenever I have an error I can't fix, I often copy it from the terminal, search google, and stackoverflow always comes at the top.</li>
-      <li><a href="https://codepen.io/search/pens?q=list+component" target="_blank" rel="noopener noreferrer">CodePen</a> - CodePen is a great resource for finding already made components and animations to add to your website project. I have used it many times in the past, mostly for animations.</li>
-    </ul>
-	<script src="index.js"></script>
-  </body>
+    <div class="main flex">
+        <div class="sidebar-left">
+            <h3>Favorite links</h3>
+            <ul class="list">
+                <li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
+                <li><a href="http://www.worldwildlife.org/home-full.html" title="WWF">WWF</a></li>
+            </ul>
+            
+            <h3>News</h3>
+            <p>Aug/2012 - About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
+            <p>Aug/2012 - Three tigers have been found dead in India in the last week. The carcass of a ten year old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
+        </div>
+        <div class="col-right">
+            <h1>The Wild Life is great</h1><br />
+            <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
+            <p>Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p><br />
+            
+            <h3>Destruction</h3>
+            <div class="flex textcontainer">
+                <img src="images/img1.jpg" class="float-left" alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." />
+                <p>Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p>
+            </div>
+            
+            <h3 class="clear">Food, pets, and traditional medicines</h3><br />
+            <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p>We believe that we can all live together in Planet Earth</p>
+    </div>
+    </div>
+    </div>
+</body>
 </html>
